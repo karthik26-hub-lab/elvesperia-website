@@ -28,7 +28,7 @@ export default function Hero({ onOpenDrawer }) {
       ></div>
 
       {/* 3. The Content (Master Copy) */}
-      <div className="text-center z-10 max-w-4xl mx-auto flex flex-col items-center mt-10">
+      <div className="text-center z-10 max-w-4xl mx-auto flex flex-col items-center mt-10 pt-24 md:pt-0">
         
         {/* Agency Tagline Pill */}
         <motion.div 

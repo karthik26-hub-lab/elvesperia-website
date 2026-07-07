@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* Interactive Background Section (Easter Egg Reveal) */}
       <div 
-        className="absolute inset-0 z-0 flex items-center justify-center overflow-hidden cursor-crosshair"
+        className="absolute inset-0 z-0 hidden md:flex items-center justify-center overflow-hidden cursor-crosshair"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       {/* The Horizontal Strip (Foreground) */}
-      <div className="w-full max-w-7xl mx-auto px-6 relative z-10 mt-auto flex flex-col md:flex-row justify-between items-center text-[11px] md:text-xs font-mono text-gray-500 uppercase tracking-widest gap-10 md:gap-0 pointer-events-none text-center md:text-left">
+      <div className="w-full max-w-7xl mx-auto px-6 relative z-10 mt-auto pt-10 md:pt-0 flex flex-col md:flex-row justify-between items-center text-[11px] md:text-xs font-mono text-gray-500 uppercase tracking-widest gap-10 md:gap-0 pointer-events-none text-center md:text-left">
         
         {/* Enable pointer events only on interactive elements to not block background hover */}
         <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center pointer-events-auto">

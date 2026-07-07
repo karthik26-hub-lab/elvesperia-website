@@ -62,7 +62,7 @@ export default function Navbar({ onLaunchClick = () => {} }) {
       className="fixed top-6 left-0 w-full flex justify-center z-50 pointer-events-none"
     >
       <div className="w-[95%] max-w-3xl pointer-events-auto">
-        <nav className="relative flex justify-between items-center px-4 py-2 rounded-full bg-gradient-to-b from-[#12072b]/80 to-black/60 backdrop-blur-2xl border border-white/[0.08] shadow-[0_20px_40px_rgba(0,0,0,0.6)] group">
+        <nav className="relative flex justify-between items-center px-4 py-2 rounded-full bg-black/90 md:bg-transparent md:bg-gradient-to-b md:from-[#12072b]/80 md:to-black/60 backdrop-blur-md md:backdrop-blur-2xl border border-white/[0.08] shadow-[0_20px_40px_rgba(0,0,0,0.6)] group">
           
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#8e74c8]/40 to-transparent opacity-70 rounded-full pointer-events-none"></div>
 
