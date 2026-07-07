@@ -11,8 +11,8 @@ export default function Home() {
             <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[150px] pointer-events-none"></div>
             <div className="absolute bottom-[20%] right-[-10%] w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-[130px] pointer-events-none"></div>
 
-            <Navbar />
-            <Hero />
+            <Navbar onLaunchClick={() => console.log("Launch clicked")} />
+            <Hero onOpenDrawer={() => console.log("Open drawer clicked")} />
 
             {/* Vibrant Background Liquid Blurs to refract through the glass */}
             <div className="fixed top-[-10%] left-[-10%] w-[600px] h-[600px] bg-indigo-600/30 rounded-full blur-[120px] pointer-events-none mix-blend-screen"></div>
