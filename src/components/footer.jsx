@@ -69,10 +69,10 @@ export default function Footer() {
       </div>
 
       {/* The Horizontal Strip (Foreground) */}
-      <div className="w-full max-w-7xl mx-auto px-6 relative z-10 mt-auto flex flex-col md:flex-row justify-between items-center text-[11px] md:text-xs font-mono text-gray-500 uppercase tracking-widest gap-8 md:gap-0 pointer-events-none">
+      <div className="w-full max-w-7xl mx-auto px-6 relative z-10 mt-auto flex flex-col md:flex-row justify-between items-center text-[11px] md:text-xs font-mono text-gray-500 uppercase tracking-widest gap-10 md:gap-0 pointer-events-none text-center md:text-left">
         
         {/* Enable pointer events only on interactive elements to not block background hover */}
-        <div className="flex gap-6 items-center pointer-events-auto">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center pointer-events-auto">
           <a 
             href="#" 
             onClick={(e) => {
@@ -95,7 +95,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex gap-6 items-center pointer-events-auto">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center pointer-events-auto">
           <a href="mailto:elvesperia01@gmail.com" className="hover:text-[#D4AF37] hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.8)] transition-all duration-300">
             hello@elvesperia.com
           </a>
@@ -132,14 +132,14 @@ export default function Footer() {
       <AnimatePresence>
         {notification.isVisible && (
           <motion.div
-            initial={{ y: -50, opacity: 0, x: "-50%" }}
+            initial={{ y: 50, opacity: 0, x: "-50%" }}
             animate={{ y: 0, opacity: 1, x: "-50%" }}
-            exit={{ y: -50, opacity: 0, x: "-50%" }}
+            exit={{ y: 50, opacity: 0, x: "-50%" }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed top-105 left-1/2 z-[100] flex items-center gap-3 bg-[#050505]/80 backdrop-blur-md border border-[#D4AF37]/30 px-6 py-3 rounded-full shadow-[0_0_25px_rgba(212,175,55,0.15)] pointer-events-none"
+            className="fixed bottom-10 left-1/2 z-[100] w-[90%] md:w-auto flex flex-col md:flex-row items-center justify-center gap-3 bg-[#050505]/95 backdrop-blur-md border border-[#D4AF37]/30 px-6 py-4 md:py-3 rounded-2xl md:rounded-full shadow-[0_0_25px_rgba(212,175,55,0.15)] pointer-events-none"
           >
-            <div className="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse shadow-[0_0_8px_rgba(212,175,55,0.8)]"></div>
-            <span className="text-[#D4AF37] font-mono text-xs uppercase tracking-widest whitespace-nowrap">
+            <div className="w-2 h-2 bg-[#D4AF37] rounded-full animate-pulse shadow-[0_0_8px_rgba(212,175,55,0.8)] shrink-0"></div>
+            <span className="text-[#D4AF37] font-mono text-[10px] md:text-xs uppercase tracking-widest text-center">
               {notification.message}
             </span>
           </motion.div>
