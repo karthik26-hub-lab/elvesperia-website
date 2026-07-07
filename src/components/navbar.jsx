@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-export default function Navbar({ onLaunchClick }) {
+export default function Navbar({ onLaunchClick = () => {} }) {
   const [active, setActive] = useState(null); // Default active item to null for Hero section
 
   // The simplified, clear navigation links, reordered: Services, Team, Workflow
