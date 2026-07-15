@@ -6,7 +6,8 @@ import { motion } from 'framer-motion';
 const teamMembers = [
   { name: 'BalaKumaresh G', role: 'FOUNDER & CEO', bio: 'Architecting high-performance digital ecosystems and structural logic.' , img: '/team/bala-kumaresh.jpg'},
   { name: 'BalaVignesh G', role: 'CO-FOUNDER', bio: 'Bridging the gap between raw hardware potential and AI innovation.' , img: '/team/bala-vignesh.jpg'},
-  { name: 'Balaji B', role: 'PARTNER & MENTOR', bio: 'Specializing in high-fidelity interface design and user experience.' , img: '/team/balaji.jpg'}
+  { name: 'Balaji B', role: 'PARTNER & MENTOR', bio: 'Specializing in high-fidelity interface design and user experience.' , img: '/team/balaji.jpg'},
+  { name: 'Pranav S', role: 'PROJECT MANAGER', bio: 'Manages project planning, team coordination and timely delivery of high-quality solutions.' , img: '/team/pranav.jpeg'}
 ];
 
 export default function Team() {
